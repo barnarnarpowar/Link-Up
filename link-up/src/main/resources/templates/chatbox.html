@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with <span th:text="${friend}"></span></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Chat with <span th:text="${friend}"></span></h1>
+    <div id="chatbox">
+        <!-- This is where the chat messages would appear -->
+        <p>Chat messages with <span th:text="${friend}"></span> would appear here.</p>
+    </div>
+    <form action="/sendMessage" method="post">
+        <input type="text" name="message" placeholder="Type your message here...">
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>

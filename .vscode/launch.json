@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-LinkUpApplication<link-up>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.toot.link_up.LinkUpApplication",
+            "projectName": "link-up",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

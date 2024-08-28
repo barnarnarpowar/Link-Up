@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend List</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Your Friends</h1>
+    <ul>
+        <!-- Loop through the friends list -->
+        <th:block th:each="friend : ${friends}">
+            <li><a th:href="@{'/chat?friend=' + ${friend}}"
+                   th:text="${friend}"></a></li>
+        </th:block>
+    </ul>
+</body>
+</html>
